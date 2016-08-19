@@ -1,0 +1,41 @@
+<p>
+
+
+    <!--  ====================== universal-image-loader-1.9.4.jar  ===================== -->
+    Android-Universal-Image-Loader 加载图片 图片地址格式
+    <!--"http://site.com/image.png" // from Web-->
+    <!--"file:///mnt/sdcard/image.png" // from SD card-->
+    <!--"file:///mnt/sdcard/video.mp4" // from SD card (video thumbnail)-->
+    <!--"content://media/external/images/media/13" // from content provider-->
+    <!--"content://media/external/video/media/13" // from content provider (video thumbnail)-->
+    <!--"assets://image.png" // from assets-->
+    <!--"drawable://" + R.drawable.img // from drawables (non-9patch images)-->
+
+
+    使用方法：
+    ImageLoader imageLoader = ImageLoader.getInstance();
+    imageLoader.displayImage(imageUri, imageView);
+
+    github: https://github.com/nostra13/Android-Universal-Image-Loader
+
+    <!--  ======================butterknife.jar===================== -->
+    配置: build.gradle中已经加入：compile 'com.jakewharton:butterknife:7.0.1' ）
+    插件安装:
+    github: https://github.com/JakeWharton/butterknife
+    使用说明: http://jakewharton.github.io/butterknife/
+
+
+    <!-- =================== ScreenManager activity管理类 ===================== -->
+    使用注意事项：所有activity 必须继承 BaseActivity
+                关闭Activity 必须使用 onBackPressed 不能使用finish();
+
+    <!-- =================== BaseFragment ================== -->
+    父Fragment已经使用butterknife绑定了rootview，只需要在子Fragment声明需要绑定的id即可
+    所有子View的初始化全部在init方法里面做
+
+    <!-- =================== LogUtils ================== -->
+
+    Debug Log信息输出打印
+
+
+</p>
